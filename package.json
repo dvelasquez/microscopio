@@ -1,7 +1,7 @@
 {
   "name": "microscopio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Microscopio (microscope in english) is a simple service to check with what technologies a website is built.",
   "main": "index.js",
   "scripts": {
     "setup": "cd fireloop/ && npm install && node server/server.js"
