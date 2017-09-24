@@ -1,0 +1,11 @@
+{
+  "db": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "micro",
+    "password": "940u45F9ULl815u4B672F2Y3B14d34GQ9HmBfD98036g9h0e4L454v72w9C1o60J",
+    "name": "db",
+    "connector": "mongodb",
+    "user": "micro"
+  }
+}

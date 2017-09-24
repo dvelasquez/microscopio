@@ -1,0 +1,12 @@
+{
+  "name": "microscopio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "cd fireloop/ && npm install && node server/server.js"
+  },
+  "keywords": [],
+  "author": "Danilo Velasquez Urrutia <danilo.velasquez@gmail.com>",
+  "license": "MIT"
+}

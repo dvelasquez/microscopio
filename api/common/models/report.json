@@ -1,0 +1,43 @@
+{
+  "name": "Report",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "originalUrl": {
+      "type": "string"
+    },
+    "applications": {
+      "type": [
+        "App"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {},
+  "mixins": {
+    "FireLoop": true,
+    "TimeStamp": {
+      "required": false
+    },
+    "Stats": [
+      {
+        "method": "stats",
+        "endpoint": "/stats",
+        "description": "Statistical information for Report registers.",
+        "type": "model",
+        "count": {
+          "on": "createdAt",
+          "by": "index"
+        }
+      }
+    ]
+  }
+}

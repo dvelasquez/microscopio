@@ -1,0 +1,52 @@
+{
+  "name": "App",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "FireLoop": true,
+    "TimeStamp": {
+      "required": false
+    },
+    "Stats": [
+      {
+        "method": "stats",
+        "endpoint": "/stats",
+        "description": "Statistical information for App registers.",
+        "type": "model",
+        "count": {
+          "on": "createdAt",
+          "by": "index"
+        }
+      }
+    ]
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "categories": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
