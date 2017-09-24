@@ -5,7 +5,21 @@
       "api": {
         "path": "./api",
         "type": "server"
+      },
+      "web": {
+        "path": "./web",
+        "type": "ng2web",
+        "name": "web",
+        "sdkPath": "web\\src\\app\\shared\\sdk"
       }
+    },
+    "promptValues": {
+      "sdkFeatures": [
+        "Enable PubSub + IO + FireLoop functionality",
+        "Generate ONLY FireLoop SDK + Auth Services",
+        "Enable NGRX functionality",
+        "Add default values in models"
+      ]
     }
   }
 }
